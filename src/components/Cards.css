@@ -1,0 +1,62 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin: 2rem;
+  padding: 1rem 0;
+}
+
+.card {
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+  /* padding: 2rem 1rem; */
+  padding-bottom: 4rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #f4e79d;
+  background-blend-mode: overlay;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  font-size: 2.5rem;
+  color:tomato;
+  /* margin-bottom: 2.5rem; */
+  position: relative;
+  z-index: 2;
+}
+
+.card p {
+  padding-top: 2rem;
+  font-size: 1.4rem;
+  font-weight: bolder;
+  color: white;
+  position: relative;
+  z-index: 2;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.card1 {
+    background-image: url('../images/lemon\ dessert.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card2 {
+    background-image: url('../images/restaurant.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0,0,0,0.2)), url('../images/Mario\ and\ Adrian\ b.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
